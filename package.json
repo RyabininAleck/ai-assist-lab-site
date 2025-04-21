@@ -1,6 +1,7 @@
 {
   "name": "brainwave",
   "private": true,
+  "homepage": "https://ryabininaleck.github.io/ai-assist-lab-site/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
