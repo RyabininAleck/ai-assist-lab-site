@@ -34,34 +34,38 @@ import {
   telegram,
   twitter,
   yourlogo,
+  bakai,
+  gazprom,
+  yoomoney,
 } from "../assets";
 import { links } from "../config";
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
+    title: "особенности",
     url: "#features",
   },
   {
     id: "1",
-    title: "Pricing",
+    title: "цены",
     url: "#pricing",
   },
-  {
-    id: "2",
-    title: "How to use",
-    url: "#how-to-use",
-  },
-  {
-    id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
-  },
+  // {
+  //   id: "2", //todo
+  //   title: "How to use",
+  //   url: "#how-to-use",
+  // },
+  // {
+  //   id: "3",  //todo
+  //   title: "Roadmap",
+  //   url: "#roadmap",
+  // },
   {
     id: "4",
-    title: "Source Code",
-    url: links.sourceCode,
+    title: "Обсудить проект",
+    // url: links.sourceCode,
+    url: "https://t.me/Ruabinin_Alexander",
     onlyMobile: true,
     external: true,
   },
@@ -71,7 +75,7 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [ yourlogo,yoomoney, bakai, gazprom, yourlogo, ];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -204,37 +208,38 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    title: "On-Premise",
+    description: "Решение для ваших собственных серверов",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Полный контроль над данными, инфраструктурой",
+      "Интеграция с внутренними системами компании",
+      "Безопасность на уровне корпоративных стандартов",
     ],
     premium: false,
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
+    title: "SaaS",
+    description: "Подписка на облачное решение.",
     price: "9.99",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "Автоматические обновления и поддержка",
+      "Масштабируемость под ваши задачи",
+      "Приоритетная техническая поддержка"
     ],
     premium: true,
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    title: "IaaS",
+    description: "Программный продукт с арендуемым серверным оборудованием",
     price: null,
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Аренда выделенных вычислительных ресурсов",
+      "Масштабирование инфраструктуры по требованию",
+      "Высокая доступность и отказоустойчивость",
+      "Доступ к серверному оборудованию без капитальных вложений"
     ],
     premium: false,
   },
@@ -243,33 +248,33 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Автоматизация рутинных задач",
+    text: "LLM позволяет автоматизировать повторяющиеся процессы - от обработки запросов клиентов до генерации документации и отчетов.",
     backgroundUrl: "/src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Улучшение продукта через анализ обратной связи",
+    text: "LLM способен быстро анализировать большие объемы отзывов, опросов и социальных сетей, выявляя главные проблемы и пожелания клиентов.",
     backgroundUrl: "/src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
     light: true,
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Персонализация и повышение конверсии",
+    text: "Используя данные о клиентах, LLM генерирует персонализированные предложения, рекомендации и коммуникации.",
     backgroundUrl: "/src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
+    iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Повышение эффективности поддержки",
+    text: "LLM-чатботы и ассистенты обеспечивают круглосуточную поддержку, быстро и точно отвечают на вопросы, помогают решать проблемы без ожидания. ",
     backgroundUrl: "/src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -277,51 +282,56 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Оптимизация закупок и снижение издержек",
+    text: "Использование LLM для автоматизации анализа предложений от поставщиков позволяет быстрее находить лучшие условия на рынке",
     backgroundUrl: "/src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Создание интеллектуальных чат-ботов для продаж",
+    text: "LLM-боты умеют выявлять потребности клиента, делать апселлы и кросс-продажи.",
     backgroundUrl: "/src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: benefitIcon1 ,
     imageUrl: benefitImage2,
   },
 ];
 
-export const socials = [
-  {
+export const socials = [  {
     id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
     title: "Telegram",
     iconUrl: telegram,
-    url: "#",
+    url: "https://t.me/Ruabinin_Alexander",
   },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
-  },
+  // {
+  //   id: "0",
+  //   title: "Discord",
+  //   iconUrl: discordBlack,
+  //   url: "#",
+  // },
+  // {
+  //   id: "1",
+  //   title: "Twitter",
+  //   iconUrl: twitter,
+  //   url: "#",
+  // },
+  // {
+  //   id: "2",
+  //   title: "Instagram",
+  //   iconUrl: instagram,
+  //   url: "#",
+  // },
+  // {
+  //   id: "3",
+  //   title: "Telegram",
+  //   iconUrl: telegram,
+  //   url: "#",
+  // },
+  // {
+  //   id: "4",
+  //   title: "Facebook",
+  //   iconUrl: facebook,
+  //   url: "#",
+  // },
 ];

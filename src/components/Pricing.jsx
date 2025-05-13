@@ -29,8 +29,8 @@ const Pricing = () => {
         </div>
 
         <Heading
-          tag="Get started with Brainwave"
-          title="Pay once, use forever"
+          tag="Начните с Ai Assist Lab"
+          title="Опишите задачу, и мы с вами свяжемся"
         />
 
         <div className="relative">
@@ -44,7 +44,7 @@ const Pricing = () => {
             className="text-xs font-code font-bold tracking-wider uppercase border-b"
             href="#"
           >
-            See the full details
+            Вверх
           </a>
         </div>
       </div>
