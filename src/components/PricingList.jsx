@@ -28,10 +28,10 @@ const PricingList = () => {
 
           <Button
             className="w-full mb-6"
-            href={plan.price ? "#" : "https://t.me/Ruabinin_Alexander"}
+            href={plan.price ? "#" : "mailto:info@example.com"}
             white={!plan.premium}
           >
-            {plan.price ? "Связаться с нами" : "Оставить заявку"}
+            {plan.price ? "Get started" : "Contact us"}
           </Button>
 
           <ul>
