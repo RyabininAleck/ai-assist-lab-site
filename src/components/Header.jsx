@@ -42,7 +42,7 @@ const Header = () => {
             src={yourlogo}
             width={190}
             height={40}
-            alt="Brainwave"
+            alt="Ai-Assist-Lab"
             className="pointer-events-none select-none"
           />
         </a>
