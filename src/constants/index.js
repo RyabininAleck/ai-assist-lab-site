@@ -49,7 +49,7 @@ export const navigation = [
   {
     id: "1",
     title: "цены",
-    url: "#pricing",
+    url: "#pricing_list",
   },
   // {
   //   id: "2", //todo
@@ -75,8 +75,28 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [ yourlogo,yoomoney, bakai, gazprom, yourlogo, ];
-
+export const companyLogos = [
+  {
+    logo: yourlogo,
+    url: "https://ai-assist-lab.com"
+  },
+  {
+    logo: yoomoney,
+    url: "https://yoomoney.ru"
+  },
+  {
+    logo: bakai,
+    url: "https://www.bakai.kg"
+  },
+  {
+    logo: gazprom,
+    url: "https://www.gazprom.ru"
+  },
+  {
+    logo: yourlogo,
+    url: "https://ai-assist-lab.com"
+  }
+];
 export const brainwaveServices = [
   "Photo generating",
   "Photo enhance",
@@ -210,7 +230,7 @@ export const pricing = [
     id: "0",
     title: "On-Premise",
     description: "Решение для ваших собственных серверов",
-    price: "3000",
+    //price: "3000",
     features: [
       "Полный контроль над данными, инфраструктурой",
       "Интеграция с внутренними системами компании",
@@ -222,7 +242,7 @@ export const pricing = [
     id: "1",
     title: "SaaS",
     description: "Подписка на облачное решение.",
-    price: "100",
+    //price: "100",
     features: [
       "Автоматические обновления и поддержка",
       "Масштабируемость под ваши задачи",
@@ -234,7 +254,7 @@ export const pricing = [
     id: "2",
     title: "IaaS",
     description: "Программный продукт с арендуемым серверным оборудованием",
-    price: null,
+    //price: null,
     features: [
       "Аренда выделенных вычислительных ресурсов",
       "Масштабирование инфраструктуры по требованию",
@@ -249,15 +269,15 @@ export const benefits = [
   {
     id: "0",
     title: "Внедрение MCP-серверов",
-    text: "MCP-серверы позволяют подключать LLM системе и инструментам. Это превращает языковую модель из изолированного ассистента в инструмент, способный выполнять реальные задачи.",
+    text: "MCP-серверы позволяют подключать LLM системе и инструментам. Это превращает языковую модель из изолированного ассистента в инструмент, способный выполнять реальные задачи.\n",
     backgroundUrl: "/src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Внедрение голосового и чат\u00A0\u2014 интерфейса",
-    text: "Внедрение чат- и голосовых интерфейсов на основе llm и mcp трансформирует пользовательский опыт, предоставляя элементы естественного взаимодействием. ",
+    title: "Естественный интерфейса",
+    text: "Внедрение чат- и голосовых интерфейсов на основе llm и mcp трансформирует пользовательский опыт, предоставляя элементы естественного взаимодействием.",
     backgroundUrl: "/src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -265,7 +285,7 @@ export const benefits = [
   {
     id: "2",
     title: "Создание интеллектуальных чат-ботов для продаж",
-    text: "LLM-боты умеют выявлять потребности клиента, делать апселлы и кросс-продажи.",
+    text: "LLM-боты умеют выявлять потребности клиента, делать апселлы и кросс-продажи.\n\n",
     backgroundUrl: "/src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon1 ,
     imageUrl: benefitImage2,
@@ -273,7 +293,7 @@ export const benefits = [
   {
     id: "3",
     title: "Повышение эффективности поддержки",
-    text: "LLM-чатботы и ассистенты обеспечивают круглосуточную поддержку, быстро и точно отвечают на вопросы, помогают решать проблемы без ожидания. ",
+    text: "LLM-чатботы и ассистенты обеспечивают круглосуточную поддержку, быстро и точно отвечают на вопросы и помогают решать проблемы. ",
     backgroundUrl: "/src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,

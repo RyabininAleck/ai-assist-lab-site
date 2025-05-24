@@ -6,7 +6,8 @@ import Section from "./Section";
 
 const Pricing = () => {
   return (
-    <Section className="overflow-hidden" id="pricing">
+    <Section className="overflow-hidden">
+      {/*{<Section className="overflow-hidden" id="pricing"> }*/}
       <div className="container relative z-2">
         <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
           <img
@@ -33,7 +34,7 @@ const Pricing = () => {
           title="Опишите задачу, и мы с вами свяжемся"
         />
 
-        <div className="relative">
+        <div className="relative" id="pricing_list" >
           <PricingList />
           <LeftLine />
           <RightLine />

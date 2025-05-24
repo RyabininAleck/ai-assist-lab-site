@@ -58,7 +58,7 @@ const Hero = () => {
             4 года опыта
           </p>
 
-          <Button href="#pricing" white>
+          <Button href="#pricing_list" white>
             Обсудить проект
           </Button>
         </div>

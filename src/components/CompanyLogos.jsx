@@ -4,20 +4,22 @@ const CompanyLogos = ({ className }) => {
   return (
     <div className={className}>
       <h5 className="tagline mb-6 text-center text-n-1/50">
-        Помогаем компаниям внедрять проверенные ИИ решения.
+        Помогаем компаниям внедрять проверенные Ai решения.
       </h5>
       <ul className="flex">
-        {companyLogos.map((logo, i) => (
-          <li
-            key={i}
-            className="flex items-center justify-center flex-1 h-[8.5rem]"
-          >
-            <img src={logo} width={134} height={28} alt={`Logo-${i}`} />
-          </li>
-        ))}
+        {companyLogos.map((company, i) => (
+            <li
+                key={i}
+                className="flex items-center justify-center flex-1 h-[8.5rem]"
+            >
+                <a href={company.url} target="_blank" rel="noopener noreferrer">
+                    <img src={ company.logo} width={134} height={28} alt={`Logo-${i}`}/>
+                </a>
+            </li>
+            ))}
       </ul>
     </div>
-  );
+);
 };
 
 export default CompanyLogos;
